@@ -63,7 +63,7 @@ const CartPage = () => {
     try {
       setLoading(true);
       const { nonce } = await instance.requestPaymentMethod();
-      const { data } = await axios.post("/api/v1/product/braintree/payment", {
+      const { data } = await axios.post("http://localhost:4500/api/v1/product/braintree/payment", {
         nonce,
         cart,
       });
@@ -103,8 +103,8 @@ const CartPage = () => {
                 <div className="row card flex-row" key={p._id}>
                   <div className="col-md-4">
                     <img
-                      src={`/api/v1/product/product-photo/${p._id}`}
-                      className="card-img-top"
+                      src={`http://localhost:4500/api/v1/product/product-photo/${p._id}`}
+                      className="card-img-top img-fluid"
                       alt={p.name}
                       width="100%"
                       height={"130px"}

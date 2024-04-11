@@ -43,9 +43,9 @@ const ProductDetails = () => {
         <div className="col-md-6">
           <img
             src={`http://localhost:4500/api/v1/product/product-photo/${product._id}`}
-            className="card-img-top"
+            className="card-img-top img-fluid"
             alt={product.name}
-            height="300"
+            height="500"
             width={"350px"}
           />
         </div>
@@ -76,7 +76,7 @@ const ProductDetails = () => {
             <div className="card m-2" key={p._id}>
               <img
                 src={`http://localhost:4500/api/v1/product/product-photo/${p._id}`}
-                className="card-img-top"
+                className="card-img-top img-fluid"
                 alt={p.name}
               />
               <div className="card-body">

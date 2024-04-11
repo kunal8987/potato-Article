@@ -18,7 +18,7 @@ const Search = () => {
               <div className="card m-2" style={{ width: "18rem" }}>
                 <img
                   src={`http://localhost:4500/api/v1/product/product-photo/${p._id}`}
-                  className="card-img-top"
+                  className="card-img-top img-fluid"
                   alt={p.name}
                 />
                 <div className="card-body">
